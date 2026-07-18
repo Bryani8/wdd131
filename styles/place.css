@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: #092c55;
-    --text-color: black;
+    --text-color: #000000;
     --padding: 1rem;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .yellow-stripe {
-    background-color: yellow;
+    background-color: #ffff00;
     height: 6px;
 }
 
@@ -90,7 +90,7 @@ footer {
 
 
 .weather-icon-mobile {
-    fill: gray;
+    fill: #808080;
     display: block;
 }
 
