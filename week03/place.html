@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galapagos Islands - Ecuador | WDD131</title>
+    <meta name="description" content="">
+    <meta name="author" content="Bryan Morocho">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="ecuador-flag">
+            <div class="yellow-stripe"></div>
+        </div>
+        <h1>GALAPAGOS</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-larger.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Galapagos Island landscape">
+            </picture>
+        </div>
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> <span>8,010 km²</span></li>
+                <li><strong>Population:</strong> <span>33,000</span></li>
+                <li><strong>Capital:</strong> <span>P. Baquerizo Moreno</span></li>
+                <li><strong>Language:</strong> <span>Spanish</span></li>
+                <li><strong>Currency:</strong> <span>American Dollar</span></li>
+                <li><strong>Time Zone:</strong> <span>UTC-5</span></li>
+                <li><strong>Calling Code:</strong> <span>+593</span></li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="weather-heading">Weather</h2>
+            <img src="images/weather.svg" alt="Cloudy weather">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">8 °C</span></li>
+                <li><strong>Conditions:</strong> Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">15 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bryan Morocho | Ecuador</p>
+        <p class="last-modified">Last Modification:<span id="lastModified"></span></p>
+    </footer>  
+</body>
+</html>
