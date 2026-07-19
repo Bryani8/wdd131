@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="Welcome to the Temple Album, a place where you can search for images of LDS temples">
+    <meta name="author" content="Bryan Morocho">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        Temple Album
+        <button type="button" id="menu"></button>
+        <nav>
+            <a href="#" id="home-btn">Home</a>
+            <a href="#" id="old-btn">Old</a>
+            <a href="#" id="new-btn">New</a>
+            <a href="#" id="large-btn">Large</a>
+            <a href="#" id="small-btn">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="album-title">Home</h1>
+        <div id="temple-container"></div>
+    </main>
+    <footer>
+        <p>&copy; | <span id="currentyear"></span> | Bryan Morocho | Quito</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>    
+</body>
+</html>
