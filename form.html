@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Bryan Morocho">
+    <meta name="description" content="Submit your product review and feedback easily using our online review form.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product-select">
+                Product Name
+                <select name="product" id="product-select">
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+
+            <div id="rating-title">Overall Rating</div>
+            <div class="rating-group">
+                <label for="star1"><input type="radio" name="rating" value="1" id="star1" required>&#9733;</label>
+                <label for="star2"><input type="radio" name="rating" value="2" id="star2" required>&#9733; &#9733;</label>
+                <label for="star3"><input type="radio" name="rating" value="3" id="star3" required>&#9733; &#9733; &#9733;</label>
+                <label for="star4"><input type="radio" name="rating" value="4" id="star4" required>&#9733; &#9733; &#9733; &#9733;</label>
+                <label for="star5"><input type="radio" name="rating" value="5" id="star5" required>&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+            </div>
+            
+            <label for="date-installation">Date of Installation <input type="date" name="completeDate" id="date-installation" required></label>
+
+            <div>Which features did you find useful in the product? (Check all that apply)</div>
+            <label class="checkbox-group" for="durability"><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+            <label class="checkbox-group" for="use"><input type="checkbox" name="use" id="use" value="yes">Ease of Use</label>
+            <label class="checkbox-group" for="performance"><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+            <label class="checkbox-group" for="design"><input type="checkbox" name="design" id="design" value="yes">Design</label>
+
+            <label for="review">Written Review <span id="optional">(Optional)</span><textarea name="review" id="review"></textarea></label>
+
+            <label for="name">Your Name<span id="optional">(Optional)</span><input type="text" id="name"></label>
+            <input type="submit" value="Post my Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; | <span id="currentyear"></span> | Bryan Morocho | Quito</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
