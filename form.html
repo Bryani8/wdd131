@@ -19,13 +19,13 @@
     <main>
         <form action="review.html" method="get">
             <label for="product-select">
-                Product Name
+                Product Name*
                 <select name="product" id="product-select" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </label>
 
-            <div id="rating-title">Overall Rating</div>
+            <div id="rating-title">Overall Rating*</div>
             <div class="rating-group">
                 <label for="star1"><input type="radio" name="rating" value="1" id="star1" required>&#9733;</label>
                 <label for="star2"><input type="radio" name="rating" value="2" id="star2" required>&#9733; &#9733;</label>
@@ -34,7 +34,7 @@
                 <label for="star5"><input type="radio" name="rating" value="5" id="star5" required>&#9733; &#9733; &#9733; &#9733; &#9733;</label>
             </div>
             
-            <label for="date-installation">Date of Installation <input type="date" name="completeDate" id="date-installation" required></label>
+            <label for="date-installation">Date of Installation*<input type="date" name="completeDate" id="date-installation" required></label>
 
             <div>Which features did you find useful in the product? (Check all that apply)</div>
             <label class="checkbox-group" for="durability"><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
@@ -44,7 +44,7 @@
 
             <label for="review">Written Review <span class="optional">(Optional)</span><textarea name="review" id="review"></textarea></label>
 
-            <label for="name">Your Name<span class="optional">(Optional)</span><input type="text" id="name"></label>
+            <label for="name">Your Name <span class="optional">(Optional)</span><input type="text" id="name"></label>
             <input type="submit" value="Post my Review">
         </form>
     </main>
