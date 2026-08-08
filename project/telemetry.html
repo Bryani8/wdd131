@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oceanverse Telemetry - Real-time metrics and historical temperature data for marine devices.">
+    <meta name="author" content="Bryan Morocho">
+    <title>Oceanverse | Telemetry</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/telemetry.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo OCEANVERSE" loading="lazy">
+            <h1>OCEANVERSE</h1>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav class="menu">
+            <a href="project.html" id="home-btn">DASHBOARD</a>
+            <a href="#" id="metrics-btn">TELEMETRY</a>
+            <a href="contact.html" id="contact-btn">CONTACT</a>
+        </nav>
+    </header>
+    <main id="telemetry-view">
+            <div class="metrics-summary-grid">
+                <div class="device-selector-container">
+                    <label for="device-select">Select Device:</label>
+                    <select name="device-select" id="device-select">
+                    </select>
+                </div>
+            <div id="metric-general-card">
+                <div class="metric-card">
+                    <span class="metric-label">Water Temperature: </span>
+                    <span class="metric-value" id="temp-value"></span>
+                    <span class="metric-trend" id="temp-trend">°C</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">High Temperature Value: </span>
+                    <span class="metric-value" id="max-temp"></span>
+                    <span class="metric-sub">°C</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Low Temperature Value: </span>
+                    <span class="metric-value" id="min-temp"></span>
+                    <span class="metric-sub">°C</span>
+                </div>
+            </div>  
+        </div>
+
+    <div class="chart-container">
+        <h3 id="chart-title">Temperature Stream: </h3>
+        <canvas id="telemetryChart"></canvas>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bryan Morocho | Quito</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

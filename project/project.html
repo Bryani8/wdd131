@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oceanverse Dashboard - Fleet monitoring and status of marine exploration devices.">
+    <meta name="author" content="Bryan Morocho">
+    <title>Oceanverse | Dashboard</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo OCEANVERSE" loading="lazy">
+            <h1>OCEANVERSE</h1>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav class="menu">
+            <a href="#" id="home-btn">DASHBOARD</a>
+            <a href="telemetry.html" id="metrics-btn">TELEMETRY</a>
+            <a href="contact.html" id="contact-btn">CONTACT</a>
+        </nav>
+    </header>
+    <main id="main-view">
+        <!-- <h2 id="view-title">Dashboard</h2> -->
+        <section id="map-section">
+            <div id="fleet-map"></div>
+        </section>
+        <div class="dashboard-content">
+            <div class="control-bar">
+                <label for="status-filter">Filter Devices:</label>
+                <select name="status-filter" id="status-filter">
+                    <option value="ALL">All Devices</option>
+                    <option value="ONLINE">Online Only</option>
+                    <option value="OFFLINE">Offline Only</option>
+                </select>
+            </div>
+            <section id="dashboard-grid" class="card-grid">
+        </div>
+        
+            <!-- <div class="control-bar">
+                <label for="status-filter">Filter Devices:</label>
+                <select name="status-filter" id="status-filter">
+                    <option value="ALL">All Devices</option>
+                    <option value="ONLINE">Online Only</option>
+                    <option value="OFFLINE">Offline Only</option>
+                </select>
+            </div> -->
+        </section>
+
+        <template id="sensor-card-template">
+            <article class="card">
+                <h3 class="card-title"></h3>
+                <div class="card-info">
+                    <span class="label">Status:</span>
+                    <span class="card-status"></span>
+                </div>
+                <div class="card-info">
+                    <span class="label">Battery:</span>
+                    <span class="card-metric"></span>
+                </div>
+                <div class="card-info" id="card-timestamp">
+                    <span class="label">Last Updated:</span>
+                    <span class="card-timestamp"></span>
+                </div>
+            </article>
+        </template>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bryan Morocho | Quito</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Oceanverse team for support, inquiries, or feedback regarding marine telemetry systems.">
+    <meta name="author" content="Bryan Morocho">
+    <title>Oceanverse | Contact Us</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo OCEANVERSE" loading="lazy">
+            <h1>OCEANVERSE</h1>
+        </div>
+         <button type="button" id="menu"></button>
+        <nav class="menu">
+            <a href="project.html" id="home-btn">DASHBOARD</a>
+            <a href="telemetry.html" id="metrics-btn">TELEMETRY</a>
+            <a href="#" id="contact-btn">CONTACT</a>
+        </nav>
+    </header>
+    <main id="contact-view">
+        <form action="" method="get">
+            <label for="name">Full name*<input type="text" id="name" name="full-name" required></label>
+            <label for="email">Email*<input type="email" id="email" name="e-mail" required></label>
+            <label for="message">Message*<textarea type="text" id="message" name="comments" required></textarea></label>
+            <input type="submit" value="Send my Message">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bryan Morocho | Quito</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
