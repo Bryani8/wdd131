@@ -32,27 +32,17 @@
         <section id="map-section">
             <div id="fleet-map"></div>
         </section>
-        <div class="dashboard-content">
-            <div class="control-bar">
-                <label for="status-filter">Filter Devices:</label>
-                <select name="status-filter" id="status-filter">
-                    <option value="ALL">All Devices</option>
-                    <option value="ONLINE">Online Only</option>
-                    <option value="OFFLINE">Offline Only</option>
-                </select>
+            <div class="dashboard-content">
+                <div class="control-bar">
+                    <label for="status-filter">Filter Devices:</label>
+                    <select name="status-filter" id="status-filter">
+                        <option value="ALL">All Devices</option>
+                        <option value="ONLINE">Online Only</option>
+                        <option value="OFFLINE">Offline Only</option>
+                    </select>
+                </div>
+                <section id="dashboard-grid" class="card-grid"></section>
             </div>
-            <section id="dashboard-grid" class="card-grid">
-        </div>
-        
-            <!-- <div class="control-bar">
-                <label for="status-filter">Filter Devices:</label>
-                <select name="status-filter" id="status-filter">
-                    <option value="ALL">All Devices</option>
-                    <option value="ONLINE">Online Only</option>
-                    <option value="OFFLINE">Offline Only</option>
-                </select>
-            </div> -->
-        </section>
 
         <template id="sensor-card-template">
             <article class="card">
